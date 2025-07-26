@@ -6,6 +6,7 @@ app = "stash-backend"
 primary_region = "bom"
 
 [build]
+  builder = "heroku/buildpacks:20"
 
 [env]
   PORT = "8080"
