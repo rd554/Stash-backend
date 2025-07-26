@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
+import { config } from '../config/env';
 
-const MONGODB_URI = process.env.MONGODB_URI || process.env.DB_URI || 'mongodb://localhost:27017/stash-ai';
+const MONGODB_URI = config.mongodbUri;
 
 // Debug: Log environment variable status
 console.log('🔍 Environment Variable Debug:');
