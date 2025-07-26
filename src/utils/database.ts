@@ -3,6 +3,11 @@ import { config } from '../config/env';
 
 const MONGODB_URI = config.mongodbUri;
 
+// Validate MongoDB URI
+if (!MONGODB_URI) {
+  throw new Error('MONGODB_URI is not configured. Please set the MONGODB_URI environment variable.');
+}
+
 // Simple debug
 console.log('🔍 MongoDB URI (first 50 chars):', MONGODB_URI.substring(0, 50) + '...');
 
