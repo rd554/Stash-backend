@@ -7,6 +7,7 @@ console.log('🚀 IMMEDIATE DEBUG - Environment variables check:');
 console.log('🚀 process.env.MONGODB_URI exists:', !!process.env.MONGODB_URI);
 console.log('🚀 process.env.NODE_ENV:', process.env.NODE_ENV);
 console.log('🚀 process.env.PORT:', process.env.PORT);
+console.log('🚀 All environment variables:', Object.keys(process.env).filter(key => key.includes('MONGODB') || key.includes('NODE') || key.includes('PORT')));
 
 import express from 'express';
 import cors from 'cors';
@@ -95,6 +96,28 @@ app.get('/health', (req, res) => {
     message: 'Stash AI Backend is running',
     timestamp: new Date().toISOString(),
     version: '1.0.0'
+  });
+});
+
+// Debug route to check environment variables
+app.get('/debug', (req, res) => {
+  res.json({
+    message: 'Environment Variables Debug',
+    mongodbUri: process.env.MONGODB_URI ? 'SET' : 'NOT SET',
+    nodeEnv: process.env.NODE_ENV,
+    port: process.env.PORT,
+    allEnvVars: Object.keys(process.env).filter(key => 
+      key.includes('MONGODB') || 
+      key.includes('NODE') || 
+      key.includes('PORT') ||
+      key.includes('OPENAI') ||
+      key.includes('ENABLE')
+    ),
+    config: {
+      mongodbUri: config.mongodbUri.substring(0, 50) + '...',
+      nodeEnv: config.nodeEnv,
+      port: config.port
+    }
   });
 });
 
