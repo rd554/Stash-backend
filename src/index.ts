@@ -2,6 +2,12 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
+// Immediate debug to check if environment variables are loaded
+console.log('🚀 IMMEDIATE DEBUG - Environment variables check:');
+console.log('🚀 process.env.MONGODB_URI exists:', !!process.env.MONGODB_URI);
+console.log('🚀 process.env.NODE_ENV:', process.env.NODE_ENV);
+console.log('🚀 process.env.PORT:', process.env.PORT);
+
 import express from 'express';
 import cors from 'cors';
 import { createServer } from 'http';

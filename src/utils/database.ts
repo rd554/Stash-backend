@@ -3,13 +3,8 @@ import { config } from '../config/env';
 
 const MONGODB_URI = config.mongodbUri;
 
-// Debug: Log environment variable status
-console.log('🔍 Environment Variable Debug:');
-console.log('🔍 process.env.MONGODB_URI exists:', !!process.env.MONGODB_URI);
-console.log('🔍 process.env.MONGODB_URI value:', process.env.MONGODB_URI ? process.env.MONGODB_URI.substring(0, 50) + '...' : 'undefined');
-console.log('🔍 process.env.DB_URI exists:', !!process.env.DB_URI);
-console.log('🔍 config.mongodbUri value:', config.mongodbUri.substring(0, 50) + '...');
-console.log('🔍 Final MONGODB_URI (first 50 chars):', MONGODB_URI.substring(0, 50) + '...');
+// Simple debug
+console.log('🔍 MongoDB URI (first 50 chars):', MONGODB_URI.substring(0, 50) + '...');
 
 // Check if we're using local MongoDB as fallback
 const isLocalMongo = MONGODB_URI.includes('localhost') || MONGODB_URI.includes('127.0.0.1');
