@@ -1,0 +1,458 @@
+[
+  {
+    "id": "persona_medium_20250701_001",
+    "date": "2025-07-01",
+    "merchant": "Paytm Wallet",
+    "amount": 1998,
+    "category": "savings",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250701_002",
+    "date": "2025-07-01",
+    "merchant": "IRCTC",
+    "amount": 2659,
+    "category": "travel",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250702_001",
+    "date": "2025-07-02",
+    "merchant": "Amazon",
+    "amount": 1358,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250703_001",
+    "date": "2025-07-03",
+    "merchant": "Paytm Wallet",
+    "amount": 1760,
+    "category": "savings",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250703_002",
+    "date": "2025-07-03",
+    "merchant": "Uber",
+    "amount": 681,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250703_003",
+    "date": "2025-07-03",
+    "merchant": "IRCTC",
+    "amount": 2780,
+    "category": "travel",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250704_001",
+    "date": "2025-07-04",
+    "merchant": "Amazon",
+    "amount": 774,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250705_001",
+    "date": "2025-07-05",
+    "merchant": "Local Kirana",
+    "amount": 770,
+    "category": "groceries",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250705_002",
+    "date": "2025-07-05",
+    "merchant": "IRCTC",
+    "amount": 1722,
+    "category": "travel",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250705_003",
+    "date": "2025-07-05",
+    "merchant": "Local Kirana",
+    "amount": 1766,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250706_001",
+    "date": "2025-07-06",
+    "merchant": "IRCTC",
+    "amount": 300,
+    "category": "travel",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250706_002",
+    "date": "2025-07-06",
+    "merchant": "Uber",
+    "amount": 2739,
+    "category": "transport",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250706_003",
+    "date": "2025-07-06",
+    "merchant": "IRCTC",
+    "amount": 300,
+    "category": "travel",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250707_001",
+    "date": "2025-07-07",
+    "merchant": "Paytm Wallet",
+    "amount": 2691,
+    "category": "savings",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250708_001",
+    "date": "2025-07-08",
+    "merchant": "Amazon",
+    "amount": 1996,
+    "category": "shopping",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250709_001",
+    "date": "2025-07-09",
+    "merchant": "UPI",
+    "amount": 1360,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250709_002",
+    "date": "2025-07-09",
+    "merchant": "Local Kirana",
+    "amount": 1945,
+    "category": "groceries",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250709_003",
+    "date": "2025-07-09",
+    "merchant": "Swiggy",
+    "amount": 2793,
+    "category": "food",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250710_001",
+    "date": "2025-07-10",
+    "merchant": "Local Kirana",
+    "amount": 2061,
+    "category": "groceries",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250710_002",
+    "date": "2025-07-10",
+    "merchant": "Paytm Wallet",
+    "amount": 2463,
+    "category": "savings",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250710_003",
+    "date": "2025-07-10",
+    "merchant": "Local Kirana",
+    "amount": 1305,
+    "category": "groceries",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250711_001",
+    "date": "2025-07-11",
+    "merchant": "Amazon",
+    "amount": 1850,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250711_002",
+    "date": "2025-07-11",
+    "merchant": "Amazon",
+    "amount": 2247,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250712_001",
+    "date": "2025-07-12",
+    "merchant": "RedBus",
+    "amount": 1686,
+    "category": "travel",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250712_002",
+    "date": "2025-07-12",
+    "merchant": "Amazon",
+    "amount": 267,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250713_001",
+    "date": "2025-07-13",
+    "merchant": "Paytm Wallet",
+    "amount": 880,
+    "category": "savings",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250713_002",
+    "date": "2025-07-13",
+    "merchant": "Local Kirana",
+    "amount": 1044,
+    "category": "groceries",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250714_001",
+    "date": "2025-07-14",
+    "merchant": "Swiggy",
+    "amount": 2003,
+    "category": "food",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250714_002",
+    "date": "2025-07-14",
+    "merchant": "Zomato",
+    "amount": 2422,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250714_003",
+    "date": "2025-07-14",
+    "merchant": "Paytm Wallet",
+    "amount": 1736,
+    "category": "savings",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250715_001",
+    "date": "2025-07-15",
+    "merchant": "Amazon",
+    "amount": 1436,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250715_002",
+    "date": "2025-07-15",
+    "merchant": "Paytm Wallet",
+    "amount": 2477,
+    "category": "savings",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250716_001",
+    "date": "2025-07-16",
+    "merchant": "Uber",
+    "amount": 379,
+    "category": "transport",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250716_002",
+    "date": "2025-07-16",
+    "merchant": "Paytm Wallet",
+    "amount": 1716,
+    "category": "savings",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250716_003",
+    "date": "2025-07-16",
+    "merchant": "Amazon",
+    "amount": 2902,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250717_001",
+    "date": "2025-07-17",
+    "merchant": "Swiggy",
+    "amount": 1323,
+    "category": "food",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250717_002",
+    "date": "2025-07-17",
+    "merchant": "Amazon",
+    "amount": 2220,
+    "category": "shopping",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250718_001",
+    "date": "2025-07-18",
+    "merchant": "Uber",
+    "amount": 1726,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250719_001",
+    "date": "2025-07-19",
+    "merchant": "Amazon",
+    "amount": 250,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250719_002",
+    "date": "2025-07-19",
+    "merchant": "Uber",
+    "amount": 2280,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250720_001",
+    "date": "2025-07-20",
+    "merchant": "RedBus",
+    "amount": 500,
+    "category": "travel",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250721_001",
+    "date": "2025-07-21",
+    "merchant": "PhonePe Wallet",
+    "amount": 521,
+    "category": "savings",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250721_002",
+    "date": "2025-07-21",
+    "merchant": "Swiggy",
+    "amount": 1222,
+    "category": "food",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250722_001",
+    "date": "2025-07-22",
+    "merchant": "RedBus",
+    "amount": 3407,
+    "category": "travel",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250722_002",
+    "date": "2025-07-22",
+    "merchant": "RedBus",
+    "amount": 2821,
+    "category": "travel",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250722_003",
+    "date": "2025-07-22",
+    "merchant": "Google Pay",
+    "amount": 1110,
+    "category": "utilities",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250723_001",
+    "date": "2025-07-23",
+    "merchant": "Paytm Wallet",
+    "amount": 2136,
+    "category": "savings",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250723_002",
+    "date": "2025-07-23",
+    "merchant": "Swiggy",
+    "amount": 1277,
+    "category": "food",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250724_001",
+    "date": "2025-07-24",
+    "merchant": "Amazon",
+    "amount": 2568,
+    "category": "shopping",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250724_002",
+    "date": "2025-07-24",
+    "merchant": "Shopping Mall",
+    "amount": 1200,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250725_001",
+    "date": "2025-07-25",
+    "merchant": "Metro Card",
+    "amount": 750,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250725_002",
+    "date": "2025-07-25",
+    "merchant": "Restaurant",
+    "amount": 850,
+    "category": "food",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250725_003",
+    "date": "2025-07-25",
+    "merchant": "Savings Account Transfer",
+    "amount": 1500,
+    "category": "savings",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_medium_20250726_001",
+    "date": "2025-07-26",
+    "merchant": "Local Kirana",
+    "amount": 680,
+    "category": "groceries",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250726_002",
+    "date": "2025-07-26",
+    "merchant": "Shopping Mall",
+    "amount": 950,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_medium_20250726_003",
+    "date": "2025-07-26",
+    "merchant": "Metro Card",
+    "amount": 600,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_medium_20250724_003",
+    "date": "2025-07-24",
+    "merchant": "Swiggy",
+    "amount": 1295,
+    "category": "food",
+    "paymentMethod": "Card"
+  }
+]

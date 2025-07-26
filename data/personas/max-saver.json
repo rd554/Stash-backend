@@ -1,0 +1,402 @@
+[
+  {
+    "id": "persona_max_20250701_001",
+    "date": "2025-07-01",
+    "merchant": "Savings Account Transfer",
+    "amount": 1035,
+    "category": "savings",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250701_002",
+    "date": "2025-07-01",
+    "merchant": "Electricity Bill",
+    "amount": 639,
+    "category": "utilities",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250702_001",
+    "date": "2025-07-02",
+    "merchant": "Metro Card",
+    "amount": 790,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250702_002",
+    "date": "2025-07-02",
+    "merchant": "Metro Card",
+    "amount": 847,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250703_001",
+    "date": "2025-07-03",
+    "merchant": "IRCTC",
+    "amount": 525,
+    "category": "travel",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250703_002",
+    "date": "2025-07-03",
+    "merchant": "Savings Account Transfer",
+    "amount": 862,
+    "category": "savings",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250703_003",
+    "date": "2025-07-03",
+    "merchant": "Savings Account Transfer",
+    "amount": 556,
+    "category": "savings",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250704_001",
+    "date": "2025-07-04",
+    "merchant": "Local Kirana",
+    "amount": 611,
+    "category": "groceries",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250704_002",
+    "date": "2025-07-04",
+    "merchant": "Metro Card",
+    "amount": 300,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250705_001",
+    "date": "2025-07-05",
+    "merchant": "Metro Card",
+    "amount": 666,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250705_002",
+    "date": "2025-07-05",
+    "merchant": "Local Kirana",
+    "amount": 729,
+    "category": "groceries",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250706_001",
+    "date": "2025-07-06",
+    "merchant": "Metro Card",
+    "amount": 828,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250707_001",
+    "date": "2025-07-07",
+    "merchant": "Metro Card",
+    "amount": 516,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250707_002",
+    "date": "2025-07-07",
+    "merchant": "IRCTC",
+    "amount": 286,
+    "category": "travel",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250707_003",
+    "date": "2025-07-07",
+    "merchant": "Metro Card",
+    "amount": 731,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250708_001",
+    "date": "2025-07-08",
+    "merchant": "Local Kirana",
+    "amount": 339,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250708_002",
+    "date": "2025-07-08",
+    "merchant": "MKTC",
+    "amount": 920,
+    "category": "travel",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250708_003",
+    "date": "2025-07-08",
+    "merchant": "Metro Card",
+    "amount": 1031,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250709_001",
+    "date": "2025-07-09",
+    "merchant": "IRCTC",
+    "amount": 627,
+    "category": "travel",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250709_002",
+    "date": "2025-07-09",
+    "merchant": "Phone Recharge",
+    "amount": 924,
+    "category": "utilities",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250710_001",
+    "date": "2025-07-10",
+    "merchant": "Local Kirana",
+    "amount": 525,
+    "category": "groceries",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250710_002",
+    "date": "2025-07-10",
+    "merchant": "Local Kirana",
+    "amount": 1136,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250710_003",
+    "date": "2025-07-10",
+    "merchant": "Local Kirana",
+    "amount": 1125,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250711_001",
+    "date": "2025-07-11",
+    "merchant": "Local Kirana",
+    "amount": 1357,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250711_002",
+    "date": "2025-07-11",
+    "merchant": "IRCTC",
+    "amount": 374,
+    "category": "travel",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250712_001",
+    "date": "2025-07-12",
+    "merchant": "Phone Recharge",
+    "amount": 940,
+    "category": "utilities",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250713_001",
+    "date": "2025-07-13",
+    "merchant": "Savings Account Transfer",
+    "amount": 942,
+    "category": "savings",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250713_002",
+    "date": "2025-07-13",
+    "merchant": "Metro Card",
+    "amount": 652,
+    "category": "transport",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250713_003",
+    "date": "2025-07-13",
+    "merchant": "Electricity Bill",
+    "amount": 766,
+    "category": "utilities",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250713_004",
+    "date": "2025-07-13",
+    "merchant": "Electricity Bill",
+    "amount": 953,
+    "category": "utilities",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250714_001",
+    "date": "2025-07-14",
+    "merchant": "IRCTC",
+    "amount": 1287,
+    "category": "travel",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250714_002",
+    "date": "2025-07-14",
+    "merchant": "Savings Account Transfer",
+    "amount": 565,
+    "category": "savings",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250715_001",
+    "date": "2025-07-15",
+    "merchant": "IRCTC",
+    "amount": 316,
+    "category": "travel",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250715_002",
+    "date": "2025-07-15",
+    "merchant": "Metro Card",
+    "amount": 407,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250716_001",
+    "date": "2025-07-16",
+    "merchant": "Metro Card",
+    "amount": 687,
+    "category": "transport",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250716_002",
+    "date": "2025-07-16",
+    "merchant": "Electricity Bill",
+    "amount": 652,
+    "category": "utilities",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250717_001",
+    "date": "2025-07-17",
+    "merchant": "IRCTC",
+    "amount": 499,
+    "category": "travel",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250717_002",
+    "date": "2025-07-17",
+    "merchant": "Metro Card",
+    "amount": 1155,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250718_001",
+    "date": "2025-07-18",
+    "merchant": "Metro Card",
+    "amount": 939,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250718_002",
+    "date": "2025-07-18",
+    "merchant": "Metro Card",
+    "amount": 824,
+    "category": "transport",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_max_20250718_003",
+    "date": "2025-07-18",
+    "merchant": "Rent Transfer",
+    "amount": 1080,
+    "category": "housing",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250719_001",
+    "date": "2025-07-19",
+    "merchant": "Rent Transfer",
+    "amount": 652,
+    "category": "housing",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250720_001",
+    "date": "2025-07-20",
+    "merchant": "Metro Card",
+    "amount": 477,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250721_001",
+    "date": "2025-07-21",
+    "merchant": "Local Kirana",
+    "amount": 999,
+    "category": "groceries",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250721_002",
+    "date": "2025-07-21",
+    "merchant": "Metro Card",
+    "amount": 1143,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250722_001",
+    "date": "2025-07-22",
+    "merchant": "IRCTC",
+    "amount": 451,
+    "category": "travel",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250723_001",
+    "date": "2025-07-23",
+    "merchant": "Metro Card",
+    "amount": 954,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250723_002",
+    "date": "2025-07-23",
+    "merchant": "Rent Transfer",
+    "amount": 444,
+    "category": "housing",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_max_20250724_001",
+    "date": "2025-07-24",
+    "merchant": "Local Kirana",
+    "amount": 464,
+    "category": "groceries",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_max_20250724_002",
+    "date": "2025-07-24",
+    "merchant": "IRCTC",
+    "amount": 711,
+    "category": "travel",
+    "paymentMethod": "Card"
+  }
+]

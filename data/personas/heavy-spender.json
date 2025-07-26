@@ -1,0 +1,434 @@
+[
+  {
+    "id": "persona_heavy_20250701_001",
+    "date": "2025-07-01",
+    "merchant": "Nykaa",
+    "amount": 3222,
+    "category": "personal care",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250701_002",
+    "date": "2025-07-01",
+    "merchant": "BigBasket",
+    "amount": 3176,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250702_001",
+    "date": "2025-07-02",
+    "merchant": "Spotify",
+    "amount": 1640,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250702_002",
+    "date": "2025-07-02",
+    "merchant": "Myntra",
+    "amount": 3768,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250702_003",
+    "date": "2025-07-02",
+    "merchant": "Domino's",
+    "amount": 2682,
+    "category": "food",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250703_001",
+    "date": "2025-07-03",
+    "merchant": "Domino's",
+    "amount": 2682,
+    "category": "food",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250703_002",
+    "date": "2025-07-03",
+    "merchant": "Zomato",
+    "amount": 1974,
+    "category": "food",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250704_001",
+    "date": "2025-07-04",
+    "merchant": "Nykaa",
+    "amount": 3222,
+    "category": "personal care",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250704_002",
+    "date": "2025-07-04",
+    "merchant": "Spotify",
+    "amount": 3821,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250705_001",
+    "date": "2025-07-05",
+    "merchant": "Amazon",
+    "amount": 3253,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_heavy_20250706_001",
+    "date": "2025-07-06",
+    "merchant": "Amazon",
+    "amount": 2648,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_heavy_20250707_001",
+    "date": "2025-07-07",
+    "merchant": "Inox",
+    "amount": 2369,
+    "category": "entertainment",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250707_002",
+    "date": "2025-07-07",
+    "merchant": "Myntra",
+    "amount": 3768,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250708_001",
+    "date": "2025-07-08",
+    "merchant": "Myntra",
+    "amount": 1871,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250709_001",
+    "date": "2025-07-09",
+    "merchant": "Inox",
+    "amount": 1331,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250709_002",
+    "date": "2025-07-09",
+    "merchant": "Blinkit",
+    "amount": 1486,
+    "category": "groceries",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250710_001",
+    "date": "2025-07-10",
+    "merchant": "Inox",
+    "amount": 1331,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250710_002",
+    "date": "2025-07-10",
+    "merchant": "BigBasket",
+    "amount": 3176,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250710_003",
+    "date": "2025-07-10",
+    "merchant": "Blinkit",
+    "amount": 1486,
+    "category": "groceries",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250711_001",
+    "date": "2025-07-11",
+    "merchant": "Netflix",
+    "amount": 1639,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250711_002",
+    "date": "2025-07-11",
+    "merchant": "Inox",
+    "amount": 1331,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250712_001",
+    "date": "2025-07-12",
+    "merchant": "Inox",
+    "amount": 1331,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250712_002",
+    "date": "2025-07-12",
+    "merchant": "Netflix",
+    "amount": 3639,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250713_001",
+    "date": "2025-07-13",
+    "merchant": "Spotify",
+    "amount": 3821,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250714_001",
+    "date": "2025-07-14",
+    "merchant": "Uber",
+    "amount": 1860,
+    "category": "transport",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_heavy_20250714_002",
+    "date": "2025-07-14",
+    "merchant": "BigBasket",
+    "amount": 1218,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250714_003",
+    "date": "2025-07-14",
+    "merchant": "Myntra",
+    "amount": 3768,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250715_001",
+    "date": "2025-07-15",
+    "merchant": "BigBasket",
+    "amount": 1218,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250715_002",
+    "date": "2025-07-15",
+    "merchant": "Nykaa",
+    "amount": 3222,
+    "category": "personal care",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250716_001",
+    "date": "2025-07-16",
+    "merchant": "Netflix",
+    "amount": 1704,
+    "category": "entertainment",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250716_002",
+    "date": "2025-07-16",
+    "merchant": "BigBasket",
+    "amount": 1218,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250717_001",
+    "date": "2025-07-17",
+    "merchant": "Netflix",
+    "amount": 3639,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250717_002",
+    "date": "2025-07-17",
+    "merchant": "Inox",
+    "amount": 2369,
+    "category": "entertainment",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250718_001",
+    "date": "2025-07-18",
+    "merchant": "Zomato",
+    "amount": 1974,
+    "category": "food",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250718_002",
+    "date": "2025-07-18",
+    "merchant": "Nykaa",
+    "amount": 1303,
+    "category": "personal care",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250719_001",
+    "date": "2025-07-19",
+    "merchant": "Netflix",
+    "amount": 1704,
+    "category": "entertainment",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250720_001",
+    "date": "2025-07-20",
+    "merchant": "Myntra",
+    "amount": 1871,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250720_002",
+    "date": "2025-07-20",
+    "merchant": "Zomato",
+    "amount": 1974,
+    "category": "food",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250720_003",
+    "date": "2025-07-20",
+    "merchant": "Myntra",
+    "amount": 3768,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250721_001",
+    "date": "2025-07-21",
+    "merchant": "Inox",
+    "amount": 2369,
+    "category": "entertainment",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250722_001",
+    "date": "2025-07-22",
+    "merchant": "Spotify",
+    "amount": 1392,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250722_002",
+    "date": "2025-07-22",
+    "merchant": "Netflix",
+    "amount": 854,
+    "category": "entertainment",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250722_003",
+    "date": "2025-07-22",
+    "merchant": "Myntra",
+    "amount": 3768,
+    "category": "shopping",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250723_001",
+    "date": "2025-07-23",
+    "merchant": "BigBasket",
+    "amount": 1218,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250724_001",
+    "date": "2025-07-24",
+    "merchant": "Blinkit",
+    "amount": 1486,
+    "category": "groceries",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250723_002",
+    "date": "2025-07-23",
+    "merchant": "BigBasket",
+    "amount": 3176,
+    "category": "groceries",
+    "paymentMethod": "NetBanking"
+  },
+  {
+    "id": "persona_heavy_20250724_002",
+    "date": "2025-07-24",
+    "merchant": "Luxury Restaurant",
+    "amount": 2500,
+    "category": "dining",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_heavy_20250725_001",
+    "date": "2025-07-25",
+    "merchant": "Cinema Hall",
+    "amount": 1200,
+    "category": "entertainment",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_heavy_20250725_002",
+    "date": "2025-07-25",
+    "merchant": "Shopping Mall",
+    "amount": 3500,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_heavy_20250725_003",
+    "date": "2025-07-25",
+    "merchant": "Uber",
+    "amount": 450,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250726_001",
+    "date": "2025-07-26",
+    "merchant": "Luxury Restaurant",
+    "amount": 1800,
+    "category": "dining",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_heavy_20250726_002",
+    "date": "2025-07-26",
+    "merchant": "Gaming Zone",
+    "amount": 800,
+    "category": "entertainment",
+    "paymentMethod": "UPI"
+  },
+  {
+    "id": "persona_heavy_20250726_003",
+    "date": "2025-07-26",
+    "merchant": "Shopping Mall",
+    "amount": 2200,
+    "category": "shopping",
+    "paymentMethod": "Card"
+  },
+  {
+    "id": "persona_heavy_20250724_003",
+    "date": "2025-07-24",
+    "merchant": "Uber",
+    "amount": 742,
+    "category": "transport",
+    "paymentMethod": "UPI"
+  }
+]
