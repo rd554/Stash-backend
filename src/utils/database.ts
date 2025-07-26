@@ -2,6 +2,12 @@ import mongoose from 'mongoose';
 
 const MONGODB_URI = process.env.MONGODB_URI || process.env.DB_URI || 'mongodb://localhost:27017/stash-ai';
 
+// Debug: Log environment variable status
+console.log('🔍 Environment Variable Debug:');
+console.log('🔍 process.env.MONGODB_URI exists:', !!process.env.MONGODB_URI);
+console.log('🔍 process.env.DB_URI exists:', !!process.env.DB_URI);
+console.log('🔍 Final MONGODB_URI (first 50 chars):', MONGODB_URI.substring(0, 50) + '...');
+
 // Check if we're using local MongoDB as fallback
 const isLocalMongo = MONGODB_URI.includes('localhost') || MONGODB_URI.includes('127.0.0.1');
 
