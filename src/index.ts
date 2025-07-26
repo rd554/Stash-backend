@@ -114,7 +114,7 @@ app.get('/debug', (req, res) => {
       key.includes('ENABLE')
     ),
     config: {
-      mongodbUri: config.mongodbUri.substring(0, 50) + '...',
+      mongodbUri: config.mongodbUri ? config.mongodbUri.substring(0, 50) + '...' : 'NOT SET',
       nodeEnv: config.nodeEnv,
       port: config.port
     }
