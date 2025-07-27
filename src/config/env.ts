@@ -20,7 +20,7 @@ export const config = {
   nodeEnv: process.env.NODE_ENV || 'development',
   
   // CORS
-  corsOrigin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  corsOrigin: process.env.CORS_ORIGIN || ['http://localhost:3000', 'https://stashai.vercel.app'],
   
   // Feature flags
   enableRealGPT4: process.env.ENABLE_REAL_GPT4 === 'true' || false,
