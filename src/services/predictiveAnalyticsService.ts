@@ -66,8 +66,10 @@ export class PredictiveAnalyticsService {
     // Analyze category trends
     const categoryTotals: { [category: string]: number } = {}
     recentTransactions.forEach(tx => {
-      const category = tx.category.toLowerCase()
-      categoryTotals[category] = (categoryTotals[category] || 0) + tx.amount
+      if (tx.category && typeof tx.category === 'string') {
+        const category = tx.category.toLowerCase()
+        categoryTotals[category] = (categoryTotals[category] || 0) + tx.amount
+      }
     })
 
     return {
@@ -150,6 +152,8 @@ export class PredictiveAnalyticsService {
     const now = new Date()
     const monthStart = new Date(now.getFullYear(), now.getMonth(), 1)
     const categoryTransactions = transactions.filter(tx => 
+      tx.category && 
+      typeof tx.category === 'string' && 
       tx.category.toLowerCase() === category.toLowerCase() &&
       new Date(tx.date) >= monthStart
     )
@@ -184,6 +188,8 @@ export class PredictiveAnalyticsService {
   }> {
     // Calculate current savings from transactions
     const savingsTransactions = transactions.filter(tx => 
+      tx.category && 
+      typeof tx.category === 'string' && 
       tx.category.toLowerCase() === 'savings'
     )
     const currentSavings = savingsTransactions.reduce((sum, tx) => sum + tx.amount, 0)
