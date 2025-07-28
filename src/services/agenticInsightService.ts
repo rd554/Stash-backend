@@ -54,6 +54,12 @@ export class AgenticInsightService {
           
           // Calculate spending by category
           const categorySpending = transactions.reduce((acc, t) => {
+            // Skip transactions with invalid data
+            if (!t || typeof t.amount !== 'number' || !t.category) {
+              console.warn('Skipping invalid transaction:', t);
+              return acc;
+            }
+            
             const normalizedCategory = this.normalizeCategory(t.category, userProfile.spendingPersonality);
             acc[normalizedCategory] = (acc[normalizedCategory] || 0) + t.amount;
             return acc;
@@ -708,6 +714,12 @@ export class AgenticInsightService {
   }
 
   private normalizeCategory(category: string, spendingPersonality: string): string {
+    // Handle undefined/null category values
+    if (!category || typeof category !== 'string') {
+      console.warn('normalizeCategory received invalid category:', category);
+      return 'Other'; // Default fallback category
+    }
+
     const categoryMappings = {
       'Heavy Spender': {
         'entertainment': 'Entertainment',
