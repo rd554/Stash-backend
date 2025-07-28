@@ -19,9 +19,11 @@ export const categoryMappings: Record<string, CategoryMapping> = {
     'Transport': 'Transport'
   },
   'Medium Spender': {
-    'food': 'Food',
-    'Food': 'Food',
-    'Food & Dining': 'Food',
+    'food': 'Food & Dining',
+    'Food': 'Food & Dining',
+    'Food & Dining': 'Food & Dining',
+    'dining': 'Food & Dining',
+    'Dining': 'Food & Dining',
     'groceries': 'Groceries',
     'Groceries': 'Groceries',
     'savings': 'Savings',

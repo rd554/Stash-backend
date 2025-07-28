@@ -14,7 +14,7 @@ export const budgetData: Record<string, PersonaBudget> = {
     persona: 'Heavy Spender',
     categories: [
       { category: 'Entertainment', amount: 0, budgetCap: 12000 },
-      { category: 'Dining', amount: 0, budgetCap: 10000 },
+      { category: 'Food & Dining', amount: 0, budgetCap: 10000 },  // Changed from 'Dining' to 'Food & Dining'
       { category: 'Groceries', amount: 0, budgetCap: 12000 },
       { category: 'Shopping', amount: 0, budgetCap: 15000 },
       { category: 'Transport', amount: 0, budgetCap: 4000 }
@@ -23,7 +23,7 @@ export const budgetData: Record<string, PersonaBudget> = {
   'Medium Spender': {
     persona: 'Medium Spender',
     categories: [
-      { category: 'Food', amount: 0, budgetCap: 6000 },
+      { category: 'Food & Dining', amount: 0, budgetCap: 6000 },  // Changed from 'Food' to 'Food & Dining'
       { category: 'Groceries', amount: 0, budgetCap: 7000 },
       { category: 'Savings', amount: 0, budgetCap: 20000 },
       { category: 'Shopping', amount: 0, budgetCap: 12000 },

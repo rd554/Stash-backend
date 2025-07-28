@@ -722,22 +722,27 @@ export class AgenticInsightService {
 
     const categoryMappings = {
       'Heavy Spender': {
+        // Map all transaction categories to match backend budgetData.ts categories
         'entertainment': 'Entertainment',
-        'food & dining': 'Dining',
-        'food': 'Dining',
-        'dining': 'Dining',
+        'food & dining': 'Food & Dining',
+        'food': 'Food & Dining',
+        'dining': 'Food & Dining',
         'groceries': 'Groceries',
         'shopping': 'Shopping',
         'transport': 'Transport'
       },
       'Medium Spender': {
-        'food': 'Food',
+        // Map all transaction categories to match backend budgetData.ts categories
+        'food & dining': 'Food & Dining',
+        'food': 'Food & Dining',
+        'dining': 'Food & Dining',
         'groceries': 'Groceries',
         'savings': 'Savings',
         'shopping': 'Shopping',
         'transport': 'Transport'
       },
       'Max Saver': {
+        // Map all transaction categories to match backend budgetData.ts categories
         'transport': 'Transport',
         'groceries': 'Groceries',
         'travel': 'Travel',
