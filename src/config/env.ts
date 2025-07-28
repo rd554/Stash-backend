@@ -25,6 +25,11 @@ export const config = {
   // Feature flags
   enableRealGPT4: process.env.ENABLE_REAL_GPT4 === 'true' || false,
   enableRealTimeNotifications: process.env.ENABLE_REALTIME_NOTIFICATIONS === 'true' || false,
+  
+  // Test user management
+  enableTestUserReset: process.env.ENABLE_TEST_USER_RESET === 'true' || false,
+  testUserSessionHours: parseInt(process.env.TEST_USER_SESSION_HOURS || '48'),
+  testUserInactivityHours: parseInt(process.env.TEST_USER_INACTIVITY_HOURS || '24'),
 };
 
 // Validate required environment variables in production

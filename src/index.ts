@@ -32,6 +32,7 @@ import budgetRoutes from './routes/budget';
 
 // Import services
 import notificationService from './services/notificationService';
+import { TestUserResetService } from './services/testUserResetService';
 
 const app = express();
 const server = createServer(app);
@@ -47,12 +48,26 @@ server.listen(PORT, () => {
   console.log(`🤖 GPT-4 integration: ${config.enableRealGPT4 ? 'Enabled' : 'Disabled'}`);
 });
 
-// Connect to MongoDB in background (non-blocking)
-setTimeout(() => {
-  connectDB().catch(error => {
+// Connect to MongoDB and initialize services in background (non-blocking)
+setTimeout(async () => {
+  try {
+    await connectDB();
+    console.log('✅ MongoDB connected successfully');
+    
+    // Initialize test user management after DB connection
+    if (config.nodeEnv === 'production' || config.enableTestUserReset) {
+      await TestUserResetService.manageTestUsers();
+      console.log('🔄 Test user management initialized');
+      console.log(`⏰ Session duration: ${config.testUserSessionHours} hours`);
+      console.log(`💤 Inactivity threshold: ${config.testUserInactivityHours} hours`);
+    } else {
+      console.log('⏭️ Test user management skipped (disabled in config)');
+    }
+  } catch (error) {
     console.log('⚠️ MongoDB connection failed, but server is running');
     console.log('⚠️ Some features may not work without database connection');
-  });
+    console.error('Database error:', error);
+  }
 }, 1000);
 
 // Initialize real-time notification service

@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import User from '../models/User';
+import { TestUserResetService } from '../services/testUserResetService';
 
 const router = Router();
 
@@ -27,6 +28,9 @@ router.post('/login', async (req: Request, res: Response) => {
       });
     }
     
+    // Track login activity for reset management
+    TestUserResetService.trackActivity(username, 'login');
+
     res.json({ 
       success: true, 
       user: {
@@ -192,6 +196,37 @@ router.patch('/personality/:username', async (req: Request, res: Response) => {
   } catch (error) {
     console.error('Update personality error:', error);
     res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Reset test user data - manual endpoint
+router.post('/reset-test-users', async (req: Request, res: Response) => {
+  try {
+    const result = await TestUserResetService.forceReset();
+    res.json(result);
+  } catch (error) {
+    console.error('Reset test users error:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: 'Failed to reset test user data' 
+    });
+  }
+});
+
+// Get test user status - for debugging
+router.get('/test-users-status', async (req: Request, res: Response) => {
+  try {
+    const status = await TestUserResetService.getStatus();
+    res.json({
+      success: true,
+      data: status
+    });
+  } catch (error) {
+    console.error('Get test users status error:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: 'Failed to get test user status' 
+    });
   }
 });
 

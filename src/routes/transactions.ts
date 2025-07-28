@@ -5,8 +5,24 @@ import { getTransactionDataByPersonality, convertToTransactionModel } from '../u
 import notificationService from '../services/notificationService';
 import transactionService from '../services/transactionService';
 import { AgenticInsightService } from '../services/agenticInsightService';
+import { TestUserResetService } from '../services/testUserResetService';
 
 const router = Router();
+
+// Middleware to track test user activity
+const trackTestUserActivity = (req: Request, res: Response, next: any) => {
+  const userId = req.params.userId || req.body.userId;
+  const testUsers = ['test1', 'test2', 'test3'];
+  
+  if (userId && testUsers.includes(userId)) {
+    TestUserResetService.trackActivity(userId, 'api_call');
+  }
+  
+  next();
+};
+
+// Apply activity tracking to all routes
+router.use(trackTestUserActivity);
 
 // Get user transactions
 router.get('/:userId', async (req: Request, res: Response) => {
