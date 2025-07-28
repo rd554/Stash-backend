@@ -188,54 +188,38 @@ export class TransactionService {
     try {
       const transactions = this.personaData[personaType] || []
       
-      // Category mapping based on user type
-      let categoryMapping: { [key: string]: string } = {};
-      
-      if (userType === 'Heavy Spender') {
-        categoryMapping = {
-          'entertainment': 'Entertainment',
-          'Entertainment': 'Entertainment',
-          'food': 'Dining',
-          'Food & Dining': 'Dining',
-          'Dining': 'Dining',
-          'groceries': 'Groceries',
-          'Groceries': 'Groceries',
-          'shopping': 'Shopping',
-          'Shopping': 'Shopping',
-          'transport': 'Transport',
-          'Transportation': 'Transport',
-          'Transport': 'Transport'
-        };
-      } else if (userType === 'Medium Spender') {
-        categoryMapping = {
-          'food': 'Food',
-          'Food': 'Food',
-          'Food & Dining': 'Food',
-          'groceries': 'Groceries',
-          'Groceries': 'Groceries',
-          'savings': 'Savings',
-          'Savings': 'Savings',
-          'shopping': 'Shopping',
-          'Shopping': 'Shopping',
-          'transport': 'Transport',
-          'Transportation': 'Transport',
-          'Transport': 'Transport'
-        };
-      } else if (userType === 'Max Saver') {
-        categoryMapping = {
-          'transport': 'Transport',
-          'Transportation': 'Transport',
-          'Transport': 'Transport',
-          'groceries': 'Groceries',
-          'Groceries': 'Groceries',
-          'travel': 'Travel',
-          'Travel': 'Travel',
-          'utilities': 'Utilities',
-          'Utilities': 'Utilities',
-          'savings': 'Savings',
-          'Savings': 'Savings'
-        };
-      }
+      // Standardized category mapping for all user types
+      const categoryMapping: { [key: string]: string } = {
+        'entertainment': 'Entertainment',
+        'Entertainment': 'Entertainment',
+        'food': 'Food & Dining',
+        'Food & Dining': 'Food & Dining',
+        'Dining': 'Food & Dining',
+        'dining': 'Food & Dining',
+        'groceries': 'Groceries',
+        'Groceries': 'Groceries',
+        'shopping': 'Shopping',
+        'Shopping': 'Shopping',
+        'transport': 'Transport',
+        'Transportation': 'Transport',
+        'Transport': 'Transport',
+        'savings': 'Savings',
+        'Savings': 'Savings',
+        'travel': 'Travel',
+        'Travel': 'Travel',
+        'utilities': 'Utilities',
+        'Utilities': 'Utilities',
+        'healthcare': 'Healthcare',
+        'Healthcare': 'Healthcare',
+        'education': 'Education',
+        'Education': 'Education',
+        'subscriptions': 'Subscriptions',
+        'Subscriptions': 'Subscriptions',
+        'rent': 'Rent',
+        'Rent': 'Rent',
+        'other': 'Other',
+        'Other': 'Other'
+      };
       
       // Filter transactions by date range and normalize categories
       const filteredTransactions = transactions

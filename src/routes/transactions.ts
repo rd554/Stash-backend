@@ -68,14 +68,21 @@ router.get('/:userId/recent', async (req: Request, res: Response) => {
     
     // Combine persona and manual transactions
     const allTransactions = [
-      ...personaTransactions,
+      ...personaTransactions.map(tx => ({
+        id: tx.id,
+        date: tx.date,
+        merchant: tx.merchant,
+        amount: tx.amount,
+        category: tx.category,
+        paymentMode: tx.paymentMethod || 'Card' // Normalize to paymentMode for frontend
+      })),
       ...manualTransactions.map(tx => ({
         id: (tx._id as any).toString(),
         date: tx.date.toISOString().split('T')[0],
         merchant: tx.merchant,
         amount: tx.amount,
-        category: tx.category.toLowerCase(),
-        paymentMethod: tx.paymentMode,
+        category: tx.category,
+        paymentMode: tx.paymentMode || 'Unknown', // Already correct field name
         isManual: true
       }))
     ];
@@ -306,14 +313,21 @@ router.get('/:userId/budget', async (req: Request, res: Response) => {
     
     // Combine persona and manual transactions
     const allTransactions = [
-      ...personaTransactions,
+      ...personaTransactions.map(tx => ({
+        id: tx.id,
+        date: tx.date,
+        merchant: tx.merchant,
+        amount: tx.amount,
+        category: tx.category,
+        paymentMode: tx.paymentMethod // Normalize to paymentMode for frontend
+      })),
       ...manualTransactions.map(tx => ({
         id: (tx._id as any).toString(),
         date: tx.date.toISOString().split('T')[0],
         merchant: tx.merchant,
         amount: tx.amount,
-        category: tx.category.toLowerCase(),
-        paymentMethod: tx.paymentMode,
+        category: tx.category,
+        paymentMode: tx.paymentMode, // Already correct field name
         isManual: true
       }))
     ];
@@ -604,7 +618,7 @@ router.get('/:userId/weekly', async (req: Request, res: Response) => {
     console.log('Total combined transactions for weekly view:', allTransactions.length)
     
     // Group transactions by day of week
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     const weeklyData: { [key: string]: number } = {}
     
     // Initialize all days with 0
@@ -615,7 +629,9 @@ router.get('/:userId/weekly', async (req: Request, res: Response) => {
     // Sum up transactions by day
     allTransactions.forEach(transaction => {
       const transactionDate = new Date(transaction.date)
-      const dayName = days[transactionDate.getDay()]
+      const dayIndex = transactionDate.getDay() // 0=Sunday, 1=Monday, ..., 6=Saturday
+      // Map JavaScript day index to our day names array (Mon, Tue, ..., Sun)
+      const dayName = dayIndex === 0 ? 'Sun' : days[dayIndex - 1]
       weeklyData[dayName] += transaction.amount
     })
     
