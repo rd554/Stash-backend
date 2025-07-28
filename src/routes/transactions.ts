@@ -564,26 +564,28 @@ router.get('/:userId/weekly', async (req: Request, res: Response) => {
     }
     const personaType = personaMapping[user.spendingPersonality] || 'medium'
     
-    // Calculate the date range: Last 7 days (from 7 days ago to today)
+    // Calculate the date range: Last 7 days (including today)
     const today = new Date()
     today.setHours(23, 59, 59, 999) // End of today
     
-    // Find 7 days ago
-    const sevenDaysAgo = new Date(today)
-    sevenDaysAgo.setDate(today.getDate() - 6) // 6 days back from today = 7 days total
-    sevenDaysAgo.setHours(0, 0, 0, 0) // Start of that day
+    // Calculate 6 days ago (so we get 7 days total including today)
+    const sixDaysAgo = new Date(today)
+    sixDaysAgo.setDate(today.getDate() - 6) // 6 days back from today = 7 days total
+    sixDaysAgo.setHours(0, 0, 0, 0) // Start of that day
     
     console.log('Weekly date range:', {
-      sevenDaysAgo: sevenDaysAgo.toISOString(),
+      sixDaysAgo: sixDaysAgo.toISOString(),
       today: today.toISOString(),
       userId,
-      personaType
+      personaType,
+      todayDayOfWeek: today.getDay(),
+      sixDaysAgoDayOfWeek: sixDaysAgo.getDay()
     })
     
     // 1. Get persona transactions for this date range
     const personaTransactions = transactionService.getTransactionsByDateRangeAndCategory(
       personaType,
-      sevenDaysAgo.toISOString().split('T')[0],
+      sixDaysAgo.toISOString().split('T')[0],
       today.toISOString().split('T')[0],
       user.spendingPersonality
     )
@@ -594,7 +596,7 @@ router.get('/:userId/weekly', async (req: Request, res: Response) => {
     const userTransactions = await Transaction.find({
       userId,
       date: {
-        $gte: sevenDaysAgo,
+        $gte: sixDaysAgo,
         $lte: today
       }
     }).sort({ date: 1 })
@@ -610,12 +612,17 @@ router.get('/:userId/weekly', async (req: Request, res: Response) => {
       })),
       ...userTransactions.map(tx => ({
         ...tx,
-        date: tx.date,
+        date: tx.date.toISOString().split('T')[0], // Convert MongoDB date to string format
         amount: tx.amount
       }))
     ]
     
     console.log('Total combined transactions for weekly view:', allTransactions.length)
+    console.log('Sample combined transactions:', allTransactions.slice(0, 3).map(tx => ({
+      date: tx.date,
+      amount: tx.amount,
+      merchant: tx.merchant || 'N/A'
+    })))
     
     // Group transactions by day of week
     const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
