@@ -152,4 +152,47 @@ router.patch('/theme/:username', async (req: Request, res: Response) => {
   }
 });
 
+// Update user spending personality
+router.patch('/personality/:username', async (req: Request, res: Response) => {
+  try {
+    const { username } = req.params;
+    const { spendingPersonality } = req.body;
+    
+    // Validate spending personality
+    const validPersonalities = ['Heavy Spender', 'Medium Spender', 'Max Saver'];
+    if (!validPersonalities.includes(spendingPersonality)) {
+      return res.status(400).json({ 
+        error: 'Invalid spending personality' 
+      });
+    }
+    
+    // Update user's spending personality
+    const user = await User.findOneAndUpdate(
+      { username },
+      { spendingPersonality },
+      { new: true }
+    );
+    
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    
+    res.json({ 
+      success: true, 
+      user: {
+        id: user._id,
+        username: user.username,
+        name: user.name,
+        age: user.age,
+        theme: user.theme,
+        spendingPersonality: user.spendingPersonality
+      },
+      message: 'Spending personality updated successfully'
+    });
+  } catch (error) {
+    console.error('Update personality error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 export default router; 

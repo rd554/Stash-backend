@@ -81,6 +81,27 @@ router.put('/:userId/:category', async (req: Request, res: Response) => {
       { upsert: true, new: true }
     );
 
+    // Trigger insight regeneration after budget cap change
+    try {
+      const { AgenticInsightService } = require('../services/agenticInsightService');
+      const agenticService = new AgenticInsightService();
+      
+      // Get user's recent transactions for insight generation
+      const Transaction = require('../models/Transaction').default;
+      const recentTransactions = await Transaction.find({ userId }).sort({ date: -1 }).limit(100);
+      
+      await agenticService.generateInsightsForUser(userId, recentTransactions, {
+        userId,
+        spendingPersonality: user.spendingPersonality,
+        salary: user.salary || 200000,
+        userType: 'test' // Add required userType field
+      });
+      
+      console.log('Generated new insights after budget cap change for user:', userId);
+    } catch (error) {
+      console.error('Failed to generate insights after budget cap change:', error);
+    }
+
     res.json({
       success: true,
       data: budget

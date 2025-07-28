@@ -86,6 +86,22 @@ export class TransactionService {
       // If current date is beyond the latest date in data, generate missing transactions
       if (currentDate > latestDate) {
         console.log(`Generating transactions for missing dates from ${latestDateInData} to ${endDate}`);
+        
+        // Check if we need to generate an entire new month
+        const latestMonth = new Date(latestDateInData).getMonth() + 1;
+        const latestYear = new Date(latestDateInData).getFullYear();
+        const currentMonth = today.getMonth() + 1;
+        const currentYear = today.getFullYear();
+        
+        if (currentYear > latestYear || (currentYear === latestYear && currentMonth > latestMonth)) {
+          console.log(`Auto-generating persona transactions for new month: ${currentYear}-${currentMonth}`);
+          const newMonthTransactions = this.generateMonthlyPersonaTransactions(personaType, currentYear, currentMonth);
+          
+          // Add new month transactions to persona data for future use
+          this.personaData[personaType] = [...(this.personaData[personaType] || []), ...newMonthTransactions];
+          console.log(`Generated ${newMonthTransactions.length} transactions for ${personaType} in ${currentYear}-${currentMonth}`);
+        }
+        
         const missingTransactions = this.generateTransactionsForMissingDates(personaType, latestDateInData, endDate);
         validTransactions = [...missingTransactions, ...validTransactions];
       }
@@ -115,6 +131,25 @@ export class TransactionService {
       
       for (let i = 0; i < numTransactions; i++) {
         const transaction = this.generateRandomTransaction(personaType, dateStr, i + 1);
+        transactions.push(transaction);
+      }
+    }
+    
+    return transactions;
+  }
+
+  // Auto-generate persona transactions for new months
+  public generateMonthlyPersonaTransactions(personaType: string, year: number, month: number): PersonaTransaction[] {
+    const transactions: PersonaTransaction[] = [];
+    const daysInMonth = new Date(year, month, 0).getDate();
+    
+    // Generate 3-5 transactions per day for the entire month
+    for (let day = 1; day <= daysInMonth; day++) {
+      const date = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+      const transactionsPerDay = Math.floor(Math.random() * 3) + 3; // 3-5 transactions per day
+      
+      for (let i = 1; i <= transactionsPerDay; i++) {
+        const transaction = this.generateRandomTransaction(personaType, date, i);
         transactions.push(transaction);
       }
     }

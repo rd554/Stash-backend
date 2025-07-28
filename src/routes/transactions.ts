@@ -582,13 +582,14 @@ router.get('/:userId/weekly', async (req: Request, res: Response) => {
       sixDaysAgoDayOfWeek: sixDaysAgo.getDay()
     })
     
-    // 1. Get persona transactions for this date range
-    const personaTransactions = transactionService.getTransactionsByDateRangeAndCategory(
-      personaType,
-      sixDaysAgo.toISOString().split('T')[0],
-      today.toISOString().split('T')[0],
-      user.spendingPersonality
-    )
+    // 1. Get persona transactions for this date range (use getLatestTransactions to include generated dates)
+    const allPersonaTransactions = transactionService.getLatestTransactions(personaType, 100);
+    const personaTransactions = allPersonaTransactions.filter(tx => {
+      const txDate = tx.date;
+      const startDateStr = sixDaysAgo.toISOString().split('T')[0];
+      const endDateStr = today.toISOString().split('T')[0];
+      return txDate >= startDateStr && txDate <= endDateStr;
+    })
     
     console.log('Found persona transactions for weekly view:', personaTransactions.length)
     
@@ -639,6 +640,17 @@ router.get('/:userId/weekly', async (req: Request, res: Response) => {
       const dayIndex = transactionDate.getDay() // 0=Sunday, 1=Monday, ..., 6=Saturday
       // Map JavaScript day index to our day names array (Mon, Tue, ..., Sun)
       const dayName = dayIndex === 0 ? 'Sun' : days[dayIndex - 1]
+      
+      // Debug: Log Sunday transactions specifically
+      if (dayIndex === 0) {
+        console.log('Sunday transaction found:', {
+          date: transaction.date,
+          merchant: transaction.merchant,
+          amount: transaction.amount,
+          dayName: dayName
+        })
+      }
+      
       weeklyData[dayName] += transaction.amount
     })
     
